@@ -1,0 +1,45 @@
+/* index.css */
+/* Global styles — loaded once in main.jsx */
+
+/* These three lines activate Tailwind */
+/* Without them no Tailwind classes work */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remove default scrollbar styling */
+/* Custom thin scrollbar for the dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f3f;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Smooth scrolling everywhere */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Remove default button and input styles */
+/* Tailwind handles these but this ensures consistency */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
